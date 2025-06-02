@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: vnpay-spring-v1
+vn-pay:
+  pay-url: https://sandbox.vnpayment.vn/paymentv2/vpcpay.html
+  return-url: http://localhost:8080/api/v1/vn-pay/vn-pay-callback
+  api-url: https://sandbox.vnpayment.vn/merchant_webapi/api/transaction
+  tmn-code: 53XDWA8T
+  secret-key: SLE1661JKOUKD7YUYABUWCDNVNCH6CN4
+  version: 2.1.0
+  command:
+    pay: pay
+    query: querydr
+    refund: refund
+  order-type: other
+  curr-code: VND
